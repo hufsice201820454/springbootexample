@@ -4,7 +4,7 @@ metadata:
   annotations:
     cert-manager.io/cluster-issuer: letsencrypt-prod
     nginx.ingress.kubernetes.io/rewrite-target: /$2
-  name: sk081-myfirst-api-server
+  name: sk079-myfirst-api-server
   namespace: skala-practice
 spec:
   ingressClassName: public-nginx
@@ -14,10 +14,10 @@ spec:
       paths:
       - backend:
           service:
-            name: sk081-myfirst-api-server
+            name: sk079-myfirst-api-server
             port:
               number: 8080
-        path: /sk081(/|$)(.*)
+        path: /sk079(/|$)(.*)
         pathType: ImplementationSpecific
   tls:
   - hosts:
